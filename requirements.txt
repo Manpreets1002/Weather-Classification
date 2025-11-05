@@ -25,5 +25,6 @@ pytest
 httpx
 flask
 meteostat
+ipykernel
 
 #. -e
