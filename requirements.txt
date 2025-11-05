@@ -24,5 +24,6 @@ boto3
 pytest
 httpx
 flask
+meteostat
 
 #. -e
