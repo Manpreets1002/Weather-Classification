@@ -6,7 +6,7 @@ class SparkManager:
     @staticmethod
     def get_spark(app_name: str = "WeatherOps"):
         if SparkManager._spark is None:
-            SparkManager._spark - (
+            SparkManager._spark = (
                 SparkSession.builder
                 .appName(app_name)
                 .config("spark.sql.shuffle.partitions", "200")
