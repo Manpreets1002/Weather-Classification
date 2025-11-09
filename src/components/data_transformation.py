@@ -81,6 +81,6 @@ class DataTransformation:
             logging.info("Training Data Saved")
 
             logging.info("Transformation Completed")
-            return self.transform_config.train_data_path,self.transform_config.test_data_path
+            return self.transform_config.train_data_path,self.transform_config.test_data_path,self.transform_config.pipeline_path
         except Exception as e:
             raise CustomException(e,sys)
