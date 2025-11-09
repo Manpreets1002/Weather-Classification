@@ -11,7 +11,7 @@ class Training:
         self.model_train = ModelTrainer()
 
     def training(self):
-        train_path,test_path = self.ingestion.ingestion_config()
+        train_path,test_path = self.ingestion.ingestion_pipeline()
         transformed_train_path,transformed_test_path,pipeline_path = self.transformation.transformation_pipeline(train_path,test_path)
         model_path = self.model_train.model_training(transformed_train_path,transformed_test_path)
 
