@@ -22,7 +22,7 @@ class DataIngestion:
     def ingestion_pipeline(self):
         try:
             logging.info("Ingestion Pipeline Started")
-            raw_df = self.spark.read.csv("C:\\Users\\HP\\Github\\Weather-Classification\\Weather_Classification.csv")
+            raw_df = self.spark.read.csv("C:\\Users\\HP\\Github\\Weather-Classification\\data\\Weather_Classification.csv")
             logging.info("Data Read Successfully")
             
             raw_df.write.mode("overwrite").save(self.ingestion_config.raw_data_path)
